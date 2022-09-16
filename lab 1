@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        A a = new A();
+
+        Console.WriteLine(a.c);
+    }
+}
+
+class A
+{
+    private float a = 9;
+    private float b = 4;
+
+    public float c
+    {
+        get { return a / b;}
+        set { a %= value; b *= value; }
+    }
+}
