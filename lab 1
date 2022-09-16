@@ -22,6 +22,6 @@ class A
     public float c
     {
         get { return a / b;}
-        set { a %= value; b *= value; }
+        set { a *= value; b *= value; }
     }
 }
